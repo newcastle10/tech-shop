@@ -1,0 +1,331 @@
+
+	@font-face {
+	font-family: helvetica_neue_light;
+	src: url(../fonts/helvetica_neue_light.ttf);
+}
+
+	@font-face {
+	font-family: nelvetica_neue_bold;
+	src: url(../fonts/helvetica_neue_bold.ttf);
+}
+
+
+	@font-face {
+	font-family: helvetica_neue_roman;
+	src: url(../fonts/helvetica_neue_roman.ttf);
+}
+
+
+
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	font-family: helvetica_neue_light;
+	color: #4d4d4d;
+}
+
+body {
+
+	max-width: 1080px;
+	margin: 0 auto;
+} 
+
+header {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	align-items: center;
+}
+.menu ul {
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+     font-size: 18px;
+
+
+
+
+}
+
+article {
+	height: calc(100vh - 70px);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 100px;
+
+}
+
+.hometext {
+	font-size: 84px;
+	font-weight: bold;
+	margin-bottom: 51px;
+}
+article p{
+
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 52px;
+
+}
+article a {
+	border: 1px solid  #707070;
+	padding: 15px 40px 15px 30px;
+	border-radius: 5px ;
+	background-color: #707070;
+	opacity: .5;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+.items {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+
+}
+.items li {
+	width: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+.items li::after {
+	content: "";
+	display: block;
+	width: 46px;
+	height: 7px;
+	background-color: #4d4d4d;
+	position: relative;
+	top: 50px;
+	left: 350px;
+}
+.items li h2 {
+	font-size: 15px;
+
+}
+.img {
+	position: relative;
+	top: -70px;
+}
+.section h2 {
+	font-size: 34px;
+	margin-bottom: 70px;
+}
+.siaa ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.siaa ul li {
+	width: 300px;
+	height: 480px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.surat {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.items {
+	position: relative;
+	top: 100px;
+}
+.items2 {
+	position: relative;
+	top: 50px;
+}
+.suratlist li img {
+	width: 350px;
+}
+.ratom{
+	margin-top: 100px;
+	font-size: 18px;
+	font-family: helvetica_neue_light;
+}
+
+.suratlist {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.pirveli  {
+	position: relative;
+}
+.meore  {
+	position: relative;
+}
+.mesame{
+	position: relative;
+}
+.pirveli::before {
+	content: "ხარიხსი";
+	display: block;
+	position: absolute;
+	color: #FFF;
+	left: 20px;
+	top: 20px;
+}
+
+.pirveli::after {
+	content: "01";
+	display:block;
+	position: absolute;
+	width: 30px;
+	height: 35px;
+	background-color: #FFFfff;
+	color: black;
+	bottom: 30px;
+	left: 30px;
+	text-align: center;
+}
+
+.meore::before {
+	content: "ნდობა";
+	color: #FFFfff;
+	left: 20px;
+	top: 20px;
+	display: block;
+	position: absolute;
+}
+.meore::after {
+	content: "02";
+	background-color: #FFFfff;
+	color: black;
+	display:block;
+	position: absolute;
+	width: 30px;
+	height: 35px;	
+	bottom: 30px;
+	left: 30px;
+	text-align: center;
+}
+
+.mesame::before {
+	content: "კომფორტი";
+	display: block;
+	position: absolute;
+	color: #FFF;
+	left: 20px;
+	top: 20px;
+}
+.mesame::after {
+	content: "03";
+	display:block;
+	position: absolute;
+	width: 30px;
+	height: 35px;
+	background-color: #FFF;
+	color: black;
+	bottom: 30px;
+	left: 30px;
+	text-align: center;
+}
+
+
+footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: #f2f2f2;
+	height: 330px;
+	z-index: -1;
+
+	
+	
+}
+.footer {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 70px;
+	border-bottom:  1px solid #DDDDDD;
+	padding-bottom: 50px;
+
+}
+.footer-logo {
+	width: 380px;
+	justify-content: space-between;
+	display: flex;
+
+}
+.footer-logo p {
+	font-size: 11px;
+	width: 260px;
+	
+}
+
+.footer-list {
+	line-height: 20px;
+}
+.footer-list li a  {
+	font-size: 11px;
+}
+address {
+	display: flex;
+	flex-direction: column;
+	font-size: 11px
+}
+.addres{
+	font-size: 11px;
+}
+
+.social {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-self: flex-start;
+	margin-left: 1100px;
+	margin-top: 30px;
+	width: 100px;
+}
+
+ @media screen and (max-width: 480px) {
+
+ 	.nav {
+ 		display: none;
+ 	}
+ 	.article_h1{
+ 		font-size: 43px;
+ 	}
+ 	.list li{
+ 		width: 320px;
+ 	}
+ 	.list li::after {
+ 		left: 120px;
+ 		top: 110px;
+ 	}
+
+ 	article {
+ 		flex-direction: column;
+ 	}
+ 	.list {
+ 		height: 1300px;
+ 		flex-direction: column;
+ 	}
+ 	.img-list {
+ 		flex-direction: column;
+ 	}
+ 	.social {
+
+ 		flex-direction: column;
+ 		margin-left: 250px;
+ 		margin-top: -187px;
+ 	} 
+ 	.footer {
+ 		flex-direction: column;
+ 	}
+ }
+
